@@ -1,0 +1,100 @@
+/*CSS Stylesheet*/
+
+/** {border: 1px solid black;}*/
+
+body {
+    margin: auto;
+    background-image: url(The_Dark_Forest.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+ul.fireflies{list-style:none}
+li{
+	background-size: cover;
+	background-image: url(firefly.png);
+	position:absolute;
+	animation: 
+		leftright infinite cubic-bezier(0.42, 0.0, 0.58, 1.0),
+		updown infinite cubic-bezier(0.42, 0.0, 0.58, 1.0),
+        fade infinite;
+}
+#firefly1 {
+animation-delay:0s;
+animation-duration:30s, 15s;
+/*animation-fill-mode:backwards; */
+}
+#firefly2 {
+animation-delay:1.5s;
+animation-duration:22s, 17s;
+/*animation-fill-mode:backwards;*/
+}
+#firefly3 {
+animation-delay:3s;
+animation-duration:25s, 13s;
+}
+#firefly4 {
+animation-delay:4.5s;
+/*animation-fill-mode:backwards;*/
+animation-duration:18s, 15s;
+}
+
+#firefly5 {
+animation-delay:5.2s;
+/*animation-fill-mode:backwards;*/
+animation-duration:24s, 10s;
+}
+
+#firefly6 {
+animation-delay:6s;
+animation-duration:30s, 8s;
+/*animation-fill-mode:backwards; */
+}
+#firefly7 {
+animation-delay:7.2s;
+animation-duration:20s, 7s;
+/*animation-fill-mode:backwards;*/
+}
+#firefly8 {
+animation-delay:9s;
+animation-duration:25s, 13s;
+}
+#firefly9 {
+animation-delay:10s;
+/*animation-fill-mode:backwards;*/
+animation-duration:18s, 15s;
+}
+
+#firefly10 {
+animation-delay:11s;
+/*animation-fill-mode:backwards;*/
+animation-duration:24s, 10s;
+}
+
+@keyframes leftright {
+  0%, 100%  {left:20%;}
+  16.666%	{left:90%;}
+  40%       {left:10%;}
+  50%	    {left:40%;}
+  66.666%	{left:70%;}
+  83.333%   {left:40%;}
+}
+
+@keyframes updown {
+  0%, 100%  {top:-20px;width:6px;height:6px}
+  25%       {top:60%; width:8px;height:8px}
+  50%       {top:40%;width:10px;height:10px}
+  75%       {top:70%;width:5px;height:5px }
+}
+
+@keyframes fade {
+    0%  { opacity: 1; }
+    5%  { opacity: 0; }
+    6%  { opacity: 1; }
+    7%  { opacity: 0; }
+   33%  { opacity: 1; }
+   66%  { opacity: 0; }
+  100%  { opacity: 1; }
+}
+
+
